@@ -1,37 +1,164 @@
 body {
-    /* background-color: darkblue; */
-    /* /background-image: url("T:/PersonalProjects/PersonalWebSite/src/Images/backgound_image2.jpg"); */
-    background-color: bisque;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    overflow-y: scroll;
-   
+  margin-top: 1cm;
+  /* background-color: darkblue; */
+  /* /background-image: url("T:/PersonalProjects/PersonalWebSite/src/Images/backgound_image2.jpg"); */
+  background-color: bisque;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  overflow-y: scroll;
+  overflow-x: scroll;
+
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
-    grid-gap: 10px; /* Gap between grid cells */
-    
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  /* Three equal columns */
+  grid-gap: 25px;
+  /* Gap between grid cells */
 
-  .grid-item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+}
 
-    font-size: 0.64cm;
-    color: rgb(16, 7, 83);
-    background-color: rgba(93, 183, 140, 0.447);
-  }
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 1fr ;
+  
+  /* Three equal columns */
+  grid-gap: 25px;
+  /* Gap between grid cells */
 
-  .grid-item img{
-    width: 60%;
-    max-width: 100%;
-    height: auto;
-    
-  }
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+
+  font-size: 0.5cm;
+  color: rgb(16, 7, 83);
+  background-color: rgba(93, 183, 140, 0.447);
+}
+
+.grid-item img {
+  width:auto;
+  /* max-width: 200px; */
+  height: 200px;
+
+}
+.grid-item span {
+  
+
+}
+
+.grid-item text{
+  vertical-align: bottom;
+  
+}
+
+#carbonated_drinks img{
+  height: 200px;
+  /* size: 100%; */
+}
+
+.item1{
+  grid-column: 1/4;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  font-size: 0.64cm;
+  color: rgb(16, 7, 83);
+  background-color: rgba(93, 183, 140, 0.447);
+}
+
+.itemDetails{
+  grid-column:1/1;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  font-size: 0.64cm;
+  color: rgba(70, 6, 32, 0.644);
+  background-color: rgba(205, 255, 231, 0.447);
+}
+
+
+nav {
+  position: relative;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(4, 4, 65);
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #d8d4d4;
+}
+
+nav ul li a:hover {
+  background-color: #504df1;
+  padding: 5px;
+ font-size: 20px;
+}
+
+nav ul li.cart {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  padding: right 10px; ;
+ 
+}
+
+.navRight{
+  float: right;
+  
+}
+.navRight img{
+  position: relative;
+  display: inline-block;
+  height: 0.8cm;
+  width: auto;
+  /* padding-top: 5px; */
+
+}
+
+
+.navRight a{
+  
+  display: block;
+  
+  padding: 10px;
+}
+
+.stickyMenu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  z-index: 9999;
+}
+
+#cartImage{
+  padding-top: 5px;
+}
