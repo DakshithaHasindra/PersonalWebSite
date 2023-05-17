@@ -1,0 +1,37 @@
+body {
+    /* background-color: darkblue; */
+    /* /background-image: url("T:/PersonalProjects/PersonalWebSite/src/Images/backgound_image2.jpg"); */
+    background-color: bisque;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    overflow-y: scroll;
+   
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+    grid-gap: 10px; /* Gap between grid cells */
+    
+  }
+
+  .grid-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    font-size: 0.64cm;
+    color: rgb(16, 7, 83);
+    background-color: rgba(93, 183, 140, 0.447);
+  }
+
+  .grid-item img{
+    width: 60%;
+    max-width: 100%;
+    height: auto;
+    
+  }
