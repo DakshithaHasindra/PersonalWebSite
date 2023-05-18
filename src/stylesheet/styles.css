@@ -12,6 +12,19 @@ body {
 
 }
 
+.menu {
+  font-weight: 900;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(116, 85, 45);
+}
+
+.subMenu{
+  background-color: rgba(137, 100, 51, 0.693);
+  text-align: center;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr ;
@@ -41,7 +54,11 @@ body {
 
   font-size: 0.5cm;
   color: rgb(16, 7, 83);
-  background-color: rgba(93, 183, 140, 0.447);
+  background-color: rgba(241, 191, 138, 0.499);
+}
+
+.grid-item:hover {
+  transform: scale(1.08);
 }
 
 .grid-item img {
@@ -50,6 +67,13 @@ body {
   height: 200px;
 
 }
+
+/* .grid-item img:hover {
+  transform: scale(1.8);
+} */
+
+
+
 .grid-item span {
   
 
@@ -137,6 +161,7 @@ nav ul li.cart {
 .navRight img{
   position: relative;
   display: inline-block;
+  flex-direction: row;
   height: 0.8cm;
   width: auto;
   /* padding-top: 5px; */
@@ -148,7 +173,7 @@ nav ul li.cart {
   
   display: block;
   
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 .stickyMenu {
@@ -162,3 +187,95 @@ nav ul li.cart {
 #cartImage{
   padding-top: 5px;
 }
+
+
+.coverImage-container {
+  position: relative;
+  display: inline-block;
+}
+
+.cover-img{
+  width: 100%;
+  height: 15cm;
+  filter: contrast(0.22);
+  filter: blur(0.1);
+}
+
+.coverImage{
+  grid-column:1/1;
+  position: relative;
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  font-size: 0.64cm;
+
+
+}
+
+.coverImageGrid{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+  grid-template-rows: repeat(3, 1fr); /* Adjust the number of rows as needed */
+  gap: 10px; /* Adjust the gap between grid items */
+}
+
+.coverGridItem{
+  .grid-item {
+    /* background-color: rgba(255, 255, 255, 0.5); Adjust the background color and opacity */
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.image-container img{
+  width: 100%;
+  height: 15cm;
+}
+
+.grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+  grid-template-rows: repeat(3, 1fr); /* Adjust the number of rows as needed */
+  gap: 10px; /* Adjust the gap between grid items */
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.5); /* Adjust the background color and opacity */
+  text-align: center;
+  padding: 10px;
+}
+
+
+
+
+
+
